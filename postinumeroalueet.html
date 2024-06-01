@@ -79,9 +79,9 @@ registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.
 registerFile("./data/df_kuntalist.json", {"name":"./data/df_kuntalist.json","mimeType":"application/json","path":"./_file/data/df_kuntalist.b688ea70.json","lastModified":1717251855616});
 registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.0934d6f6.json","lastModified":1717251848340});
 registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1717251852352});
-registerFile("./data/dfzip.csv", {"name":"./data/dfzip.csv","mimeType":"text/csv","path":"./_file/data/dfzip.e978b072.csv","lastModified":1717251849332});
-registerFile("./data/dfzip_aikasarja.csv", {"name":"./data/dfzip_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/dfzip_aikasarja.0ed05006.csv","lastModified":1717258456168});
-registerFile("./data/dfzip_region.json", {"name":"./data/dfzip_region.json","mimeType":"application/json","path":"./_file/data/dfzip_region.a4477ff3.json","lastModified":1717258461976});
+registerFile("./data/dfzip.csv", {"name":"./data/dfzip.csv","mimeType":"text/csv","path":"./_file/data/dfzip.e52ca1d2.csv","lastModified":1717259209130});
+registerFile("./data/dfzip_aikasarja.csv", {"name":"./data/dfzip_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/dfzip_aikasarja.bdb7c252.csv","lastModified":1717259347869});
+registerFile("./data/dfzip_region.json", {"name":"./data/dfzip_region.json","mimeType":"application/json","path":"./_file/data/dfzip_region.575ad086.json","lastModified":1717259350977});
 
 define({id: "291198c8", outputs: ["dfzip","dfzip_aikasarja","dfzip_region","InputRegioLevel","SelYear","unsafe_html"], body: async () => {
 const [{dfzip, dfzip_aikasarja, dfzip_region}, {InputRegioLevel, SelYear}, {unsafe_html}] = await Promise.all([import("./_import/components/data_zip.e70f541f.js"), import("./_import/components/data_indikaattori.01336874.js"), import("./_import/components/alueprofiilit.197586ee.js")]);
