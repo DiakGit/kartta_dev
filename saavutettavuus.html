@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Saavutettavuusseloste | Etusivu</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/custom.c8d03ed8.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/custom.c8d03ed8.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<meta property="og:title" content="Huono-osaisuus Suomessa -karttasovellus"><meta property="og:url" content="https://karttasovellus.diak.fi"><meta property="og:image" content="https://markuskainu.fi/posts/2024-05-30-diak-karttasovellus/karttasovellus2024.png"><meta property="og:description" content="Sovelluksessa voit tarkastella erilaisia huono-osaisuuden osoittimia, osoittimien välisiä yhteyksiä sekä luoda profiileja alueista. Postinumeroaluetietoihin on lisäksi oma näkymänsä."><meta name="twitter:title" content="Huono-osaisuus Suomessa -karttasovellus"><meta name="twitter:description" content="Sovelluksessa voit tarkastella erilaisia huono-osaisuuden osoittimia, osoittimien välisiä yhteyksiä sekä luoda profiileja alueista. Postinumeroaluetietoihin on lisäksi oma näkymänsä."><meta name="twitter:image" content="https://markuskainu.fi/posts/2024-05-30-diak-karttasovellus/karttasovellus2024.png"><meta name="twitter:card" content="summary_large_image">
+<script type="module">
+
+import "./_observablehq/client.js";
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Etusivu</a></li>
+  </ol>
+  <ol>
+    <details open class="observablehq-section-active">
+      <summary>Huono-osaisuus Suomessa</summary>
+      <ol>
+    <li class="observablehq-link"><a href="./indikaattorivertailu.html">Indikaattorivertailu</a></li>
+    <li class="observablehq-link"><a href="./riippuvuustarkastelut.html">Riippuvuustarkastelut</a></li>
+    <li class="observablehq-link"><a href="./postinumeroalueet.html">Postinumeroalueet</a></li>
+    <li class="observablehq-link"><a href="./alueprofiilit.html">Alueprofiilit</a></li>
+    <li class="observablehq-link"><a href="./data.html">Aineistot</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./saavutettavuus.html">Saavutettavuus</a></li>
+    <li class="observablehq-link"><a href="./changelog.html">Muutokset</a></li>
+      </ol>
+    </details>
+  </ol>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+<div><a href="https://diakhub.fi/" target="_blank" rel="noopener noreferrer"></a><div class="container" style="float: right;"><a href="https://diakhub.fi/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="93" height="33" viewBox="0 0 184 65" role="img" focusable="false"><g fill="none" fill-rule="evenodd"><g fill="#472A89" class="diakhub-logo__text-group" style="float: right"><path fill-rule="nonzero" d="M73.826 0l-2.664.009.211 64.55 2.664-.009z"></path><path d="M85.553.023v28.772H97.09c8.607 0 14.822-6.084 14.822-14.383 0-8.298-6.172-14.389-14.7-14.389H85.554zm4.791 4.356h6.783c5.605 0 9.95 4.193 9.95 10.07 0 5.879-4.222 9.99-9.747 9.99h-6.986V4.38z"></path><path fill-rule="nonzero" d="M121.821.023h-4.791v28.772h4.791z"></path><path d="M147.656 22.3l2.719 6.495h5.117L143.062.023h-4.914L125.6 28.795h4.995l2.719-6.495h14.342zm-1.826-4.318h-10.722l5.358-12.786 5.358 12.786h.006zm32.402 10.813h5.771l-11.74-16.479L183.269.023h-5.641l-13.565 14.882V.023h-4.797v28.772h4.797v-7.313l4.828-5.385zm-69.205 35.629V35.653h-3.25v12.985H88.636V35.653h-3.249v28.771h3.249v-12.66h17.141v12.66zm38.77-28.79h-3.25V52.57c0 5.59-3.248 8.835-8.65 8.835-5.401 0-8.73-3.244-8.73-8.835V35.634h-3.25V52.57c0 7.481 4.507 11.999 11.98 11.999 7.473 0 11.9-4.524 11.9-12V35.635zm13.473.019v28.771h12.183c6.419 0 10.236-2.92 10.236-7.812 0-3.943-2.4-6.658-6.5-7.275 3.33-.7 5.242-3.127 5.242-6.496 0-4.524-3.453-7.195-9.181-7.195h-11.98v.007zm3.249 3.163h8.57c3.817 0 6.049 1.648 6.049 4.562 0 2.914-2.232 4.686-6.048 4.686h-8.571v-9.248zm0 12.374h8.57c4.63 0 7.313 1.847 7.313 4.973 0 3.288-2.682 5.135-7.312 5.135h-8.571V51.19z"></path></g><path fill="#AB1D89" fill-rule="nonzero" d="M26.361 25.404c5.33-6.379 4.539-15.922-1.765-21.315C18.292-1.304 8.862-.504 3.533 5.875c-5.329 6.38-4.538 15.923 1.765 21.316 6.304 5.393 15.734 4.593 21.063-1.787z"></path><path fill="#F170AB" fill-rule="nonzero" d="M26.394 59.605c5.307-6.398 4.484-15.938-1.839-21.309-6.322-5.37-15.75-4.537-21.056 1.86-5.307 6.399-4.484 15.94 1.838 21.31 6.322 5.37 15.75 4.538 21.057-1.86z"></path><path fill="#AB1D89" fill-rule="nonzero" d="M60.308 59.655c5.332-6.377 4.545-15.92-1.757-21.316-6.302-5.395-15.733-4.599-21.064 1.779-5.33 6.377-4.544 15.921 1.758 21.316s15.732 4.599 21.063-1.779z"></path><path fill="#F170AB" fill-rule="nonzero" d="M57.821 24.877c4.677-5.447 4.106-13.7-1.277-18.433C51.162 1.711 43.007 2.29 38.33 7.736c-4.677 5.447-4.106 13.7 1.277 18.433 5.382 4.734 13.537 4.155 18.214-1.292z"></path></g><title>DiakHub</title></svg></a></div><span style="font-size: 22px; font-weight: 400; font-family: Noto Sans;">Huono-osaisuus Suomessa (HOS)</span><div><span style="font-size: 12px; font-weight: 400; font-family: Fira Code;">v2.0.0008</span></div><hr></div>
+</header>
+<main id="observablehq-main" class="observablehq">
+<div class="row">
+  <div class="col-lg-8">
+<h1>Saavutettavuusseloste</h1>
+<p>Saavutettavuudella tarkoitetaan, että verkkosivut ja mobiilisovellukset sekä niiden sisällöt ovat sellaisia,
+että kuka tahansa voisi niitä käyttää ja ymmärtää mitä niissä sanotaan.</p>
+<p>Diakin verkkosivuja koskee laki digitaalisten palvelujen tarjoamisesta, joka pohjautuu  EU:n saavutettavuusdirektiiviin. 
+Lain mukaan kaikilla tulee olla tasavertaiset mahdollisuudet käyttää digitaalisia palveluita.</p>
+<p>
+</p><p>Tämä saavutettavuusseloste koskee
+<a class="diaklink" target="_blank" href="https://www.thl.fi/sokra" rel="noopener noreferrer">Sokra-hankkeessa</a>
+toteutettu
+<a class="diaklink" target="_blank" href="https://karttasovellus.diak.fi/" rel="noopener noreferrer">karttasivusto</a>
+on julkaistu 31.5.2024,
+joka tarkoittaa sitä, että sivuston tulee noudattaa WCAG 2.1 –kriteeristön AA-tasoa.</p>
+<p></p>
+<h3>Digipalvelun saavutettavuuden tila</h3>
+<p>
+<a class="diaklink" target="_blank" href="https://diak.shinyapps.io/karttasovellus/" rel="noopener noreferrer">Karttasivusto</a>
+täyttää pääosin WCAG 2.1 -kriteeristön A &amp; AA -saavutettavuusvaatimukset.
+</p>
+<h3>Saavutettavuusselosteen laatiminen</h3>
+<p>Karttasivustoa koskeva seloste on laadittu 29.5.2024. 
+Seloste perustuu seuraavilla testausohjelmistoilla suoritettuun itsearvioon.</p>
+<strong>Ruudunlukijat</strong>
+<ul>
+<li>
+  <a class="diaklink" target="_blank" href="https://www.nvaccess.org/" rel="noopener noreferrer">NVDA ↗</a>
+</li>
+<li>
+  <a class="diaklink" target="_blank" href="https://wiki.gnome.org/Projects/Orca" rel="noopener noreferrer">Orca ↗</a>
+</li>
+<li>
+  <a class="diaklink" target="_blank" href="https://www.chromevox.com/" rel="noopener noreferrer">ChromeVox ↗</a>
+</li>
+</ul>
+<strong>Saavutettavuuden tarkastuohjelmat</strong>
+<ul>
+<li>
+  <a class="diaklink" target="_blank" href="https://ainspector.github.io/" rel="noopener noreferrer">AInspector ↗</a>
+</li>
+<li>
+  <a class="diaklink" target="_blank" href="https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html" rel="noopener noreferrer">WAI-ARIA Usage ↗</a>
+</li>
+<li>
+  <a class="diaklink" target="_blank" href="https://validator.w3.org/nu/" rel="noopener noreferrer">Nu Html Checker ↗</a>
+</li>
+<li>
+  <a class="diaklink" target="_blank" href="https://developer.paciellogroup.com/resources/contrastanalyser/" rel="noopener noreferrer">Colour Contrast Analyser ↗</a>
+</li>
+<li>
+  <a class="diaklink" target="_blank" href="https://wave.webaim.org/" rel="noopener noreferrer">WAVE Web Accessibility Evaluation Tool ↗</a>
+</li>
+</ul>
+<p>Näiden arvioiden ja ulkopuolisen raportin perusteella karttasivuston ensimmäiseen versioon tehtiin lukuisia saavutettavuutta parantavia korjauksia.</p>
+<h3>Palautetta saavutettavuudesta?</h3>
+<p>Huomasitko saavutettavuuspuutteen digipalvelussamme? Kerro se meille ja teemme parhaamme puutteen korjaamiseksi</p>
+<p>Jos huomaat sivustolla saavutettavuusongelmia, anna ensin palautetta sivuston ylläpitäjälle. Vastauksessa voi mennä 14 päivää. Jos et ole tyytyväinen saamaasi vastaukseen tai et saa vastausta lainkaan kahden viikon aikana, voit ilmoittaa asiasta valvontaviranomaiselle.</p>
+<strong>Valvontaviranomaisen yhteystiedot:</strong>
+<p>
+  Etelä-Suomen aluehallintovirasto
+  <br>
+  Saavutettavuuden valvonnan yksikkö
+  <br>
+  www.saavutettavuusvaatimukset.fi
+  <br>
+  saavutettavuus(at)avi.fi
+  <br>
+  puhelinnumero vaihde 0295 016 000
+</p>
+</div>
+</div>
+<script defer="" data-domain="karttasovellus.diak.fi" src="https://plausible.vaphana.com/js/script.js"></script></main>
+<footer id="observablehq-footer">
+<div><div class="grid grid-cols-2" style="background-color: #271143; min-height: 120px;"><div><img src="https://www.diak.fi/wp-content/themes/diak/dist/images/diak-logo-2.svg" width="200px" style="padding: 20px;" alt="Diak-ammattikorkeakoulun logo"></div><div style="color: white; text-align: center; margin-top: 20px; margin-bottom: auto; ">Diakonia-ammattikorkeakoulu<br>PL 12, 00511 Helsinki </div></div></div>
+</footer>
+</div>

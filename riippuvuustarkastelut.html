@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Riippuvuustarkastelut | Etusivu</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/custom.c8d03ed8.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/custom.c8d03ed8.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_import/components/data_indikaattori.01336874.js">
+<link rel="modulepreload" href="./_import/components/alueprofiilit.197586ee.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/duckdb.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/_esm.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.14/_esm.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="./_npm/underscore@1.13.6/_esm.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="./_npm/arquero@5.4.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/@duckdb/duckdb-wasm@1.28.0/_esm.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="./_npm/apache-arrow@16.1.0/_esm.js">
+<link rel="modulepreload" href="./_npm/acorn@8.11.3/_esm.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/_esm.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="./_npm/tslib@2.6.2/_esm.js">
+<link rel="modulepreload" href="./_npm/flatbuffers@24.3.25/_esm.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/_esm.js">
+<meta property="og:title" content="Huono-osaisuus Suomessa -karttasovellus"><meta property="og:url" content="https://karttasovellus.diak.fi"><meta property="og:image" content="https://markuskainu.fi/posts/2024-05-30-diak-karttasovellus/karttasovellus2024.png"><meta property="og:description" content="Sovelluksessa voit tarkastella erilaisia huono-osaisuuden osoittimia, osoittimien välisiä yhteyksiä sekä luoda profiileja alueista. Postinumeroaluetietoihin on lisäksi oma näkymänsä."><meta name="twitter:title" content="Huono-osaisuus Suomessa -karttasovellus"><meta name="twitter:description" content="Sovelluksessa voit tarkastella erilaisia huono-osaisuuden osoittimia, osoittimien välisiä yhteyksiä sekä luoda profiileja alueista. Postinumeroaluetietoihin on lisäksi oma näkymänsä."><meta name="twitter:image" content="https://markuskainu.fi/posts/2024-05-30-diak-karttasovellus/karttasovellus2024.png"><meta name="twitter:card" content="summary_large_image">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+import {registerFile} from "./_observablehq/stdlib.js";
+
+registerFile("./data/df.csv", {"name":"./data/df.csv","mimeType":"text/csv","path":"./_file/data/df.e033f7be.csv","lastModified":1717186020384});
+registerFile("./data/df_aikasarja.csv", {"name":"./data/df_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/df_aikasarja.0d014aa5.csv","lastModified":1717185755343});
+registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1716981351050});
+registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.7697f8c3.json","lastModified":1717241433068});
+registerFile("./data/df_kuntalist.json", {"name":"./data/df_kuntalist.json","mimeType":"application/json","path":"./_file/data/df_kuntalist.b688ea70.json","lastModified":1716981495452});
+registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.0934d6f6.json","lastModified":1716981349818});
+registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1716981354674});
+
+define({id: "8ac3309a", outputs: ["df","df_aikasarja","indicator_list","region_levels","SelYear","InputRegioLevel","df_region","financial","financial1","df_kuntalist","all_var_class","df2","unsafe_html"], body: async () => {
+const [{df, df_aikasarja, indicator_list, region_levels, SelYear, InputRegioLevel, df_region, financial, financial1, df_kuntalist, all_var_class, df2}, {unsafe_html}] = await Promise.all([import("./_import/components/data_indikaattori.01336874.js"), import("./_import/components/alueprofiilit.197586ee.js")]);
+
+return {df,df_aikasarja,indicator_list,region_levels,SelYear,InputRegioLevel,df_region,financial,financial1,df_kuntalist,all_var_class,df2,unsafe_html};
+}});
+
+define({id: "19560720", inputs: ["FileAttachment"], outputs: ["df_muuttujakuvaukset"], body: async (FileAttachment) => {
+const df_muuttujakuvaukset = await FileAttachment("./data/df_muuttujakuvaukset.json").json("typed")
+return {df_muuttujakuvaukset};
+}});
+
+define({id: "2fd85720", body: () => {
+//display(indicator_list["Kunnat"][selected_var_classX][0])
+//display(selected_region)
+}});
+
+define({id: "e7b736b0", inputs: ["Inputs","indicator_list","selected_regio_level"], outputs: ["InputRegion"], body: (Inputs,indicator_list,selected_regio_level) => {
+// var regNames = [... new Set(df_taso.map(d => d.aluenimi))];
+//var regNames = [... new Set(df_aikasarja.filter(d => d.regio_level == selected_regio_level).map(d => d.aluenimi))];
+//const InputRegion = Inputs.select(regNames.sort(),  {value: "Veteli"});
+
+var InputRegion = Inputs.select(indicator_list[selected_regio_level].aluenimi);
+return {InputRegion};
+}});
+
+define({id: "68ba333a", inputs: ["Generators","InputRegion"], outputs: ["selected_region"], body: (Generators,InputRegion) => {
+var selected_region = Generators.input(InputRegion);
+//const selected_region = "Veteli"
+return {selected_region};
+}});
+
+define({id: "093ad1d1", inputs: ["Inputs","all_var_class"], outputs: ["InputVarClassX","InputVarClassY"], body: (Inputs,all_var_class) => {
+const InputVarClassX = Inputs.select(all_var_class, {
+        //label: "muuttujaluokka",
+        //value: all_var_class[0]
+        });
+const InputVarClassY = Inputs.select(all_var_class, {
+            //label: "muuttujaluokka",
+            //value: all_var_class[0]
+            });
+
+return {InputVarClassX,InputVarClassY};
+}});
+
+define({id: "5e10d16c", inputs: ["Inputs","all_variableX","all_variableY"], outputs: ["InputVarX","InputVarY"], body: (Inputs,all_variableX,all_variableY) => {
+const InputVarX = Inputs.select(all_variableX, {
+        //label: "muuttujaluokka",
+        value: all_variableX[3]});
+const InputVarY = Inputs.select(all_variableY, {
+            //label: "muuttujaluokka",
+            value: all_variableY[4]});
+return {InputVarX,InputVarY};
+}});
+
+define({id: "98a99b5b", inputs: ["df","selected_var_classX","selected_var_classY"], outputs: ["all_variableX","all_variableY"], body: (df,selected_var_classX,selected_var_classY) => {
+//const all_variableX = [... new Set(df.filter(d => d.var_class == selected_var_classX).map(x=>x.variable))];
+//const all_variableY = [... new Set(df.filter(d => d.var_class == selected_var_classY).map(x=>x.variable))];
+
+const all_variableX = [... new Set(df.filter(d => d.var_class == selected_var_classX).map(x=>x.variable))];
+const all_variableY = [... new Set(df.filter(d => d.var_class == selected_var_classY).map(x=>x.variable))];
+
+
+//var all_variableX = indicator_list["Kunnat"][selected_var_classX][0]
+//var all_variableY = indicator_list["Kunnat"][selected_var_classY][0]
+
+return {all_variableX,all_variableY};
+}});
+
+define({id: "328b1227", inputs: ["Inputs"], outputs: ["removeOutlier"], body: (Inputs) => {
+const removeOutlier = Inputs.checkbox(["poista poikkeavat havainnot*"], {
+            //label: "poista poikkeavat havainnot"
+            });
+return {removeOutlier};
+}});
+
+define({id: "d7195672", inputs: ["Generators","InputRegioLevel","removeOutlier"], outputs: ["selected_regio_level","remove_outliers"], body: (Generators,InputRegioLevel,removeOutlier) => {
+const selected_regio_level = Generators.input(InputRegioLevel);
+const remove_outliers = Generators.input(removeOutlier);
+
+return {selected_regio_level,remove_outliers};
+}});
+
+define({id: "3a2b12c9", body: () => {
+//display(selected_regio_level)
+}});
+
+define({id: "0fcc76c3", inputs: ["Generators","InputVarClassX","InputVarClassY"], outputs: ["selected_var_classX","selected_var_classY"], body: (Generators,InputVarClassX,InputVarClassY) => {
+const selected_var_classX = Generators.input(InputVarClassX);
+const selected_var_classY = Generators.input(InputVarClassY);
+return {selected_var_classX,selected_var_classY};
+}});
+
+define({id: "e2aabf65", inputs: ["Generators","InputVarX","InputVarY"], outputs: ["selected_variableX","selected_variableY"], body: (Generators,InputVarX,InputVarY) => {
+const selected_variableX = Generators.input(InputVarX);
+const selected_variableY = Generators.input(InputVarY);
+return {selected_variableX,selected_variableY};
+}});
+
+define({id: "a3a0b544", inputs: ["Generators","SelYear"], outputs: ["selectedYear"], body: (Generators,SelYear) => {
+const selectedYear = Generators.input(SelYear);
+return {selectedYear};
+}});
+
+define({id: "ae0c220f", inline: true, inputs: ["InputRegioLevel","display"], body: async (InputRegioLevel,display) => {
+display(await(
+InputRegioLevel
+))
+}});
+
+define({id: "c0905fc4", inline: true, inputs: ["SelYear","display"], body: async (SelYear,display) => {
+display(await(
+SelYear
+))
+}});
+
+define({id: "878622a2", inline: true, inputs: ["InputRegion","display"], body: async (InputRegion,display) => {
+display(await(
+InputRegion
+))
+}});
+
+define({id: "ea574c9a", inline: true, inputs: ["removeOutlier","display"], body: async (removeOutlier,display) => {
+display(await(
+removeOutlier
+))
+}});
+
+define({id: "59d93b4c", inline: true, inputs: ["InputVarClassY","display"], body: async (InputVarClassY,display) => {
+display(await(
+InputVarClassY
+))
+}});
+
+define({id: "768f510e", inline: true, inputs: ["InputVarY","display"], body: async (InputVarY,display) => {
+display(await(
+InputVarY
+))
+}});
+
+define({id: "a9824b76", inline: true, inputs: ["InputVarClassX","display"], body: async (InputVarClassX,display) => {
+display(await(
+InputVarClassX
+))
+}});
+
+define({id: "9e10a57d", inline: true, inputs: ["InputVarX","display"], body: async (InputVarX,display) => {
+display(await(
+InputVarX
+))
+}});
+
+define({id: "b4b3ea8d", inputs: ["df_aikasarja","selected_regio_level","selected_variableX","selectedYear","selected_variableY","remove_outliers"], outputs: ["df_taso","df_plotX","df_plotY","df_plotXY","requiredKeys","df_plot"], body: (df_aikasarja,selected_regio_level,selected_variableX,selectedYear,selected_variableY,remove_outliers) => {
+// rakennetaan data
+//.filter(d => selected_regio_level.includes(d.regio_level))
+var df_taso = df_aikasarja.filter(d => d.regio_level === selected_regio_level)
+
+const df_plotX = df_taso.filter(d => d.variable === selected_variableX  && d.aika === selectedYear).map(({
+    value: valueX, 
+    aluenimi, region_id, pop, aluekoodi, regio_level})=>({aluenimi, region_id, aluekoodi, regio_level, valueX}));
+const df_plotY = df_taso.filter(d => d.variable === selected_variableY  && d.aika === selectedYear).map(({
+    value: valueY, 
+    aluenimi, region_id,  pop, aluekoodi, regio_level})=>({aluenimi, region_id, pop, aluekoodi, regio_level, valueY}));
+
+const df_plotXY = df_plotX.map(item1 => {
+  const item2 = df_plotY.find(item2 => item2.region_id === item1.region_id);
+  return { ...item1, ...item2 };
+});
+
+// Varmista että mukava vain objectit joissa arvo sekä X että Y 
+// että saadaan R² laskettua
+var requiredKeys = ['valueY', 'valueX'];
+var df_plot = df_plotXY.filter(function(obj) {
+    return requiredKeys.every(function(key) {
+        return obj.hasOwnProperty(key);
+    });
+});
+
+if (remove_outliers == "poista poikkeavat havainnot*"){
+
+var valuesx = df_plot.map(obj => obj.valueX);
+var valuesy = df_plot.map(obj => obj.valueY);
+
+// Sort the values
+valuesx.sort((a, b) => a - b);
+valuesy.sort((a, b) => a - b);
+
+// Function to calculate the median
+function median(arr) {
+    const mid = Math.floor(arr.length / 2);
+    if (arr.length % 2 === 0) {
+        return (arr[mid - 1] + arr[mid]) / 2;
+    } else {
+        return arr[mid];
+    }
+}
+
+// Calculate Q1 and Q3
+const Q1x = median(valuesx.slice(0, Math.floor(valuesx.length / 2)));
+const Q3x = median(valuesx.slice(Math.ceil(valuesx.length / 2)));
+
+const Q1y = median(valuesy.slice(0, Math.floor(valuesy.length / 2)));
+const Q3y = median(valuesy.slice(Math.ceil(valuesy.length / 2)));
+
+
+// Calculate IQR
+const IQRx = Q3x - Q1x;
+const IQRy = Q3y - Q1y;
+
+// Determine the lower and upper bounds
+const lowerBoundx = Q1x - 1.5 * IQRx;
+const upperBoundx = Q3x + 1.5 * IQRx;
+
+const lowerBoundy = Q1y - 1.5 * IQRy;
+const upperBoundy = Q3y + 1.5 * IQRy;
+
+// Filter out the outliers
+var df_plot01 = df_plot.filter(obj => {
+    return obj.valueX >= lowerBoundx && obj.valueX <= upperBoundx;
+});
+
+var df_plot = df_plot01.filter(obj => {
+    return obj.valueY >= lowerBoundy && obj.valueY <= upperBoundy;
+});
+}
+
+return {df_taso,df_plotX,df_plotY,df_plotXY,requiredKeys,df_plot};
+}});
+
+define({id: "a30d98f4", inputs: ["df_plotX","df_plotY"], outputs: ["valX","maxValX","valY","maxValY"], body: (df_plotX,df_plotY) => {
+// outliereiden hallinta
+const valX = df_plotX.map(d => d.valueX);
+const maxValX = Math.max(...valX);
+
+const valY = df_plotY.map(d => d.valueY);
+const maxValY = Math.max(...valY);
+return {valX,maxValX,valY,maxValY};
+}});
+
+define({id: "4a2a200d", inputs: ["df_region","selected_region","df_plot"], outputs: ["region_subset_names","df_focus"], body: (df_region,selected_region,df_plot) => {
+var region_subset_names = df_region.features.filter(d => d.properties.region_name == selected_region).map(d => d.properties.neighbours)
+// valitaan korostukseen!
+ var df_focus = df_plot.filter(d => region_subset_names[0].includes(d.aluekoodi))
+//display(df_focus)
+return {region_subset_names,df_focus};
+}});
+
+define({id: "c0905fc4-1", inline: true, inputs: ["SelYear","display"], body: async (SelYear,display) => {
+display(await(
+SelYear
+))
+}});
+
+define({id: "b5b0be72", inline: true, inputs: ["hajonta","display"], body: async (hajonta,display) => {
+display(await(
+hajonta
+))
+}});
+
+define({id: "9111eb87", outputs: ["linearRegression"], body: () => {
+function linearRegression(y,x){
+
+        var lr = {};
+        var n = y.length;
+        var sum_x = 0;
+        var sum_y = 0;
+        var sum_xy = 0;
+        var sum_xx = 0;
+        var sum_yy = 0;
+
+        for (var i = 0; i < y.length; i++) {
+
+            sum_x += x[i];
+            sum_y += y[i];
+            sum_xy += (x[i]*y[i]);
+            sum_xx += (x[i]*x[i]);
+            sum_yy += (y[i]*y[i]);
+        } 
+
+        lr['slope'] = (n * sum_xy - sum_x * sum_y) / (n*sum_xx - sum_x * sum_x);
+        lr['intercept'] = (sum_y - lr.slope * sum_x)/n;
+        lr['r2'] = Math.pow((n*sum_xy - sum_x*sum_y)/Math.sqrt((n*sum_xx-sum_x*sum_x)*(n*sum_yy-sum_y*sum_y)),2);
+
+        return lr;
+
+};
+return {linearRegression};
+}});
+
+define({id: "6b805e19", inputs: ["df_plot","linearRegression"], outputs: ["valueX","valueY","lr"], body: (df_plot,linearRegression) => {
+let valueX = df_plot.map(a => a.valueX)
+let valueY = df_plot.map(a => a.valueY)
+
+
+
+var lr = linearRegression(valueX,valueY)
+//display(valueY)
+//display(df_plot)
+return {valueX,valueY,lr};
+}});
+
+define({id: "780c8515", inputs: ["resize","Plot","selected_variableX","selected_variableY","selectedYear","financial","lr","df_plot","df_focus"], outputs: ["hajonta"], body: (resize,Plot,selected_variableX,selected_variableY,selectedYear,financial,lr,df_plot,df_focus) => {
+var hajonta =  resize((width) => Plot.plot({
+      title: selected_variableX + " vs. " + selected_variableY + " vuonna " + selectedYear,
+      width,
+      height: width/1.8,
+    ariaLabel: "Hajontakuvio",
+    ariaDescription: "Hajontakuvio jossa vaaka-akselilla"  + selected_variableX + " ja pystyakselilla " + selected_variableY + ", vuodelta " + selectedYear + ". Kuvioon laskettu lineaarinene korrelaatio, jonka korrelaatiokerroin on " + financial(lr.r2),
+
+      grid: true,
+      x: {label: selected_variableX,
+          //domain: [0,limitX*1.1]
+          },
+      y: {label: selected_variableY,
+          //domain: [0,limitY*1.1]
+          },
+      color: {legend: true, 
+              range: ["#F272B8","#0511F2","#0D0D0D","#A61F8F","#402B8C"]
+},
+      marks: [
+        Plot.text(["R²=" + financial(lr.r2)],{frameAnchor: "right", fontSize: 16, monospace: true}),
+        Plot.linearRegressionY(df_plot, {x: "valueX", y: "valueY", stroke: "pink"}),
+        Plot.dot(df_plot, {x: "valueX", y: "valueY", stroke: "red", tip: true, r: "pop",
+        //title: (d) => [d.aluenimi, d.regio_level].join("\n"),
+        channels: {
+        Alue: "aluenimi"
+        },
+        lineWidth: 10
+        }),
+        Plot.dot(df_focus, 
+        {x: "valueX", 
+        y: "valueY", 
+        stroke: "#4269d0", 
+        fill: "#87cefa",
+        tip: false, 
+        r: "pop",
+        lineWidth: 10
+        }),
+        Plot.text(df_focus,{x: "valueX", 
+        y: "valueY", 
+        text: "aluenimi", 
+        frameAnchor: "bottom",
+        dy: -10,
+        monospace: true
+        })
+        ]
+    }))
+return {hajonta};
+}});
+
+define({id: "12ee04aa", inputs: ["df_muuttujakuvaukset","selected_variableX","selected_variableY"], outputs: ["metaX","metaY"], body: (df_muuttujakuvaukset,selected_variableX,selected_variableY) => {
+var metaX = df_muuttujakuvaukset.filter(d => d.variable == selected_variableX)
+var metaY = df_muuttujakuvaukset.filter(d => d.variable == selected_variableY)
+return {metaX,metaY};
+}});
+
+define({id: "ee4989fb", inputs: ["unsafe_html","metaX","metaY","display"], body: async (unsafe_html,metaX,metaY,display) => {
+display(await(
+unsafe_html`
+<div class="grid grid-cols-2">
+<div class="note" label = "Metatiedot vaaka-akseli">
+${metaX[0].link}
+<br/>
+<br/>
+<em>${metaX[0].description}</em>
+</div>
+
+<div class="note" label = "Metatiedot pystyakseli">
+${metaY[0].link}
+<br/>
+<br/>
+<em>${metaY[0].description}</em>
+</div>
+</div>
+`
+))
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Etusivu</a></li>
+  </ol>
+  <ol>
+    <details open class="observablehq-section-active">
+      <summary>Huono-osaisuus Suomessa</summary>
+      <ol>
+    <li class="observablehq-link"><a href="./indikaattorivertailu.html">Indikaattorivertailu</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./riippuvuustarkastelut.html">Riippuvuustarkastelut</a></li>
+    <li class="observablehq-link"><a href="./postinumeroalueet.html">Postinumeroalueet</a></li>
+    <li class="observablehq-link"><a href="./alueprofiilit.html">Alueprofiilit</a></li>
+    <li class="observablehq-link"><a href="./data.html">Aineistot</a></li>
+    <li class="observablehq-link"><a href="./saavutettavuus.html">Saavutettavuus</a></li>
+    <li class="observablehq-link"><a href="./changelog.html">Muutokset</a></li>
+      </ol>
+    </details>
+  </ol>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+<div><a href="https://diakhub.fi/" target="_blank" rel="noopener noreferrer"></a><div class="container" style="float: right;"><a href="https://diakhub.fi/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="93" height="33" viewBox="0 0 184 65" role="img" focusable="false"><g fill="none" fill-rule="evenodd"><g fill="#472A89" class="diakhub-logo__text-group" style="float: right"><path fill-rule="nonzero" d="M73.826 0l-2.664.009.211 64.55 2.664-.009z"></path><path d="M85.553.023v28.772H97.09c8.607 0 14.822-6.084 14.822-14.383 0-8.298-6.172-14.389-14.7-14.389H85.554zm4.791 4.356h6.783c5.605 0 9.95 4.193 9.95 10.07 0 5.879-4.222 9.99-9.747 9.99h-6.986V4.38z"></path><path fill-rule="nonzero" d="M121.821.023h-4.791v28.772h4.791z"></path><path d="M147.656 22.3l2.719 6.495h5.117L143.062.023h-4.914L125.6 28.795h4.995l2.719-6.495h14.342zm-1.826-4.318h-10.722l5.358-12.786 5.358 12.786h.006zm32.402 10.813h5.771l-11.74-16.479L183.269.023h-5.641l-13.565 14.882V.023h-4.797v28.772h4.797v-7.313l4.828-5.385zm-69.205 35.629V35.653h-3.25v12.985H88.636V35.653h-3.249v28.771h3.249v-12.66h17.141v12.66zm38.77-28.79h-3.25V52.57c0 5.59-3.248 8.835-8.65 8.835-5.401 0-8.73-3.244-8.73-8.835V35.634h-3.25V52.57c0 7.481 4.507 11.999 11.98 11.999 7.473 0 11.9-4.524 11.9-12V35.635zm13.473.019v28.771h12.183c6.419 0 10.236-2.92 10.236-7.812 0-3.943-2.4-6.658-6.5-7.275 3.33-.7 5.242-3.127 5.242-6.496 0-4.524-3.453-7.195-9.181-7.195h-11.98v.007zm3.249 3.163h8.57c3.817 0 6.049 1.648 6.049 4.562 0 2.914-2.232 4.686-6.048 4.686h-8.571v-9.248zm0 12.374h8.57c4.63 0 7.313 1.847 7.313 4.973 0 3.288-2.682 5.135-7.312 5.135h-8.571V51.19z"></path></g><path fill="#AB1D89" fill-rule="nonzero" d="M26.361 25.404c5.33-6.379 4.539-15.922-1.765-21.315C18.292-1.304 8.862-.504 3.533 5.875c-5.329 6.38-4.538 15.923 1.765 21.316 6.304 5.393 15.734 4.593 21.063-1.787z"></path><path fill="#F170AB" fill-rule="nonzero" d="M26.394 59.605c5.307-6.398 4.484-15.938-1.839-21.309-6.322-5.37-15.75-4.537-21.056 1.86-5.307 6.399-4.484 15.94 1.838 21.31 6.322 5.37 15.75 4.538 21.057-1.86z"></path><path fill="#AB1D89" fill-rule="nonzero" d="M60.308 59.655c5.332-6.377 4.545-15.92-1.757-21.316-6.302-5.395-15.733-4.599-21.064 1.779-5.33 6.377-4.544 15.921 1.758 21.316s15.732 4.599 21.063-1.779z"></path><path fill="#F170AB" fill-rule="nonzero" d="M57.821 24.877c4.677-5.447 4.106-13.7-1.277-18.433C51.162 1.711 43.007 2.29 38.33 7.736c-4.677 5.447-4.106 13.7 1.277 18.433 5.382 4.734 13.537 4.155 18.214-1.292z"></path></g><title>DiakHub</title></svg></a></div><span style="font-size: 22px; font-weight: 400; font-family: Noto Sans;">Huono-osaisuus Suomessa (HOS)</span><div><span style="font-size: 12px; font-weight: 400; font-family: Fira Code;">v2.0.0008</span></div><hr></div>
+</header>
+<main id="observablehq-main" class="observablehq">
+<div id="cell-8ac3309a" class="observablehq observablehq--block"></div>
+<div id="cell-19560720" class="observablehq observablehq--block"></div>
+<div id="cell-2fd85720" class="observablehq observablehq--block"></div>
+<h1 id="riippuvuustarkastelut" tabindex="-1"><a class="observablehq-header-anchor" href="#riippuvuustarkastelut">Riippuvuustarkastelut</a></h1>
+<div id="cell-e7b736b0" class="observablehq observablehq--block"></div>
+<div id="cell-68ba333a" class="observablehq observablehq--block"></div>
+<div id="cell-093ad1d1" class="observablehq observablehq--block"></div>
+<div id="cell-5e10d16c" class="observablehq observablehq--block"></div>
+<div id="cell-98a99b5b" class="observablehq observablehq--block"></div>
+<div id="cell-328b1227" class="observablehq observablehq--block"></div>
+<div id="cell-d7195672" class="observablehq observablehq--block"></div>
+<div id="cell-3a2b12c9" class="observablehq observablehq--block"></div>
+<div id="cell-0fcc76c3" class="observablehq observablehq--block"></div>
+<div id="cell-e2aabf65" class="observablehq observablehq--block"></div>
+<div id="cell-a3a0b544" class="observablehq observablehq--block"></div>
+<div class="grid grid-cols-4">
+<div class="card">
+<strong>Aluetaso</strong><span id="cell-ae0c220f" class="observablehq--loading"></span>
+<strong>Vuosi</strong><span id="cell-c0905fc4" class="observablehq--loading"></span>
+<strong>Alue</strong><span id="cell-878622a2" class="observablehq--loading"></span>
+<br>
+<span id="cell-ea574c9a" class="observablehq--loading"></span>
+<hr>
+<h2>pystyakseli</h2>
+<strong>muuttujaluokka</strong><span id="cell-59d93b4c" class="observablehq--loading"></span>
+<strong>muuttuja</strong><span id="cell-768f510e" class="observablehq--loading"></span>
+<hr>
+<h2>vaaka-akseli</h2>
+<strong>muuttujaluokka</strong><span id="cell-a9824b76" class="observablehq--loading"></span>
+<strong>muuttuja</strong><span id="cell-9e10a57d" class="observablehq--loading"></span>
+<div id="cell-b4b3ea8d" class="observablehq observablehq--block"></div>
+<div id="cell-a30d98f4" class="observablehq observablehq--block"></div>
+<div id="cell-4a2a200d" class="observablehq observablehq--block"></div>
+<!--<strong>Vuosi</strong><span id="cell-c0905fc4-1" class="observablehq--loading"></span>-->
+</div>
+<div class="card tall-plot grid-colspan-3"><span id="cell-b5b0be72" class="observablehq--loading"></span>
+  </div>
+</div>
+<p>*<em>Poikkeavan havainnon täytyy olla vähintään puolitoista kertaa kvartiiliväli korkeampi yläkvartiilia tai matalampi alakvartiilia.</em></p>
+<div id="cell-9111eb87" class="observablehq observablehq--block"></div>
+<div id="cell-6b805e19" class="observablehq observablehq--block"></div>
+<div id="cell-780c8515" class="observablehq observablehq--block"></div>
+<div id="cell-12ee04aa" class="observablehq observablehq--block"></div>
+<hr>
+<h2 id="metatiedot" tabindex="-1"><a class="observablehq-header-anchor" href="#metatiedot">Metatiedot</a></h2>
+<div id="cell-ee4989fb" class="observablehq observablehq--block observablehq--loading"></div>
+<script defer="" data-domain="karttasovellus.diak.fi" src="https://plausible.vaphana.com/js/script.js"></script>
+</main>
+<footer id="observablehq-footer">
+<div><div class="grid grid-cols-2" style="background-color: #271143; min-height: 120px;"><div><img src="https://www.diak.fi/wp-content/themes/diak/dist/images/diak-logo-2.svg" width="200px" style="padding: 20px;" alt="Diak-ammattikorkeakoulun logo"></div><div style="color: white; text-align: center; margin-top: 20px; margin-bottom: auto; ">Diakonia-ammattikorkeakoulu<br>PL 12, 00511 Helsinki </div></div></div>
+</footer>
+</div>
