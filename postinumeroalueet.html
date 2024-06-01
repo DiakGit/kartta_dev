@@ -14,7 +14,7 @@
 <link rel="modulepreload" href="./_observablehq/client.js">
 <link rel="modulepreload" href="./_observablehq/runtime.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.js">
-<link rel="modulepreload" href="./_import/components/data_zip.7f2c8052.js">
+<link rel="modulepreload" href="./_import/components/data_zip.e70f541f.js">
 <link rel="modulepreload" href="./_import/components/data_indikaattori.01336874.js">
 <link rel="modulepreload" href="./_import/components/alueprofiilit.197586ee.js">
 <link rel="modulepreload" href="./_observablehq/stdlib/duckdb.js">
@@ -72,19 +72,19 @@
 import {define} from "./_observablehq/client.js";
 import {registerFile} from "./_observablehq/stdlib.js";
 
-registerFile("./data/df.csv", {"name":"./data/df.csv","mimeType":"text/csv","path":"./_file/data/df.e033f7be.csv","lastModified":1717186020384});
-registerFile("./data/df_aikasarja.csv", {"name":"./data/df_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/df_aikasarja.0d014aa5.csv","lastModified":1717185755343});
-registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1716981351050});
-registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.7697f8c3.json","lastModified":1717241433068});
-registerFile("./data/df_kuntalist.json", {"name":"./data/df_kuntalist.json","mimeType":"application/json","path":"./_file/data/df_kuntalist.b688ea70.json","lastModified":1716981495452});
-registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.0934d6f6.json","lastModified":1716981349818});
-registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1716981354674});
-registerFile("./data/dfzip.csv", {"name":"./data/dfzip.csv","mimeType":"text/csv","path":"./_file/data/dfzip.e978b072.csv","lastModified":1717250801420});
-registerFile("./data/dfzip_aikasarja.csv", {"name":"./data/dfzip_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/dfzip_aikasarja.0ed05006.csv","lastModified":1717186615043});
-registerFile("./data/dfzip_region.json", {"name":"./data/dfzip_region.json","mimeType":"application/json","path":"./_file/data/dfzip_region.f76a1899.json","lastModified":1716981501201});
+registerFile("./data/df.csv", {"name":"./data/df.csv","mimeType":"text/csv","path":"./_file/data/df.e033f7be.csv","lastModified":1717251850680});
+registerFile("./data/df_aikasarja.csv", {"name":"./data/df_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/df_aikasarja.0d014aa5.csv","lastModified":1717251853072});
+registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1717251849860});
+registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.7697f8c3.json","lastModified":1717251849192});
+registerFile("./data/df_kuntalist.json", {"name":"./data/df_kuntalist.json","mimeType":"application/json","path":"./_file/data/df_kuntalist.b688ea70.json","lastModified":1717251855616});
+registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.0934d6f6.json","lastModified":1717251848340});
+registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1717251852352});
+registerFile("./data/dfzip.csv", {"name":"./data/dfzip.csv","mimeType":"text/csv","path":"./_file/data/dfzip.e978b072.csv","lastModified":1717251849332});
+registerFile("./data/dfzip_aikasarja.csv", {"name":"./data/dfzip_aikasarja.csv","mimeType":"text/csv","path":"./_file/data/dfzip_aikasarja.4481d38c.csv","lastModified":1717251923697});
+registerFile("./data/dfzip_region.json", {"name":"./data/dfzip_region.json","mimeType":"application/json","path":"./_file/data/dfzip_region.f76a1899.json","lastModified":1717251854268});
 
 define({id: "291198c8", outputs: ["dfzip","dfzip_aikasarja","dfzip_region","InputRegioLevel","SelYear","unsafe_html"], body: async () => {
-const [{dfzip, dfzip_aikasarja, dfzip_region}, {InputRegioLevel, SelYear}, {unsafe_html}] = await Promise.all([import("./_import/components/data_zip.7f2c8052.js"), import("./_import/components/data_indikaattori.01336874.js"), import("./_import/components/alueprofiilit.197586ee.js")]);
+const [{dfzip, dfzip_aikasarja, dfzip_region}, {InputRegioLevel, SelYear}, {unsafe_html}] = await Promise.all([import("./_import/components/data_zip.e70f541f.js"), import("./_import/components/data_indikaattori.01336874.js"), import("./_import/components/alueprofiilit.197586ee.js")]);
 
 return {dfzip,dfzip_aikasarja,dfzip_region,InputRegioLevel,SelYear,unsafe_html};
 }});
@@ -196,23 +196,27 @@ var dfzip_region_ss = filterFeaturesByProperty(dfzip_region, "kuntanimi", select
 return {filterFeaturesByProperty,dfzip_region_ss};
 }});
 
-define({id: "60a8301d", inputs: ["selected_regio_level","dfzip_aikasarja","selectedYear","selected_variable","selected_alue"], outputs: ["df_plot"], body: (selected_regio_level,dfzip_aikasarja,selectedYear,selected_variable,selected_alue) => {
+define({id: "8163d4dd", inputs: ["selected_regio_level","dfzip_aikasarja","selectedYear","selected_variable","selected_alue"], outputs: ["df_plot"], body: (selected_regio_level,dfzip_aikasarja,selectedYear,selected_variable,selected_alue) => {
 var df_plot = [""]
 if (selected_regio_level == "Hyvinvointialueet"){
 var df_plot = dfzip_aikasarja.filter(d => d.aika == selectedYear && d.variable == selected_variable && selected_alue.includes(d.hyvinvointialue_name_fi))
 } else {
 var df_plot = dfzip_aikasarja.filter(d => d.aika == selectedYear && d.variable == selected_variable && selected_alue.includes(d.kuntanimi))
 }
-var df_plot = df_plot.map(({ aluekoodi, ...rest }) => ({
-  ...rest,
-  aluekoodi: String(aluekoodi),
-}));
+
+df_plot.forEach(obj => {
+  // Check if the object has the property and if it's a string
+  if (typeof obj.aluekoodi === 'string') {
+    // Replace the character in the string
+    obj.aluekoodi = obj.aluekoodi.replace(new RegExp('p', 'g'), '');
+  }
+});
 
 
 return {df_plot};
 }});
 
-define({id: "caa1077d", inputs: ["dfzip_region_ss","df_plot","display"], outputs: ["joinData","dfLeaflet"], body: (dfzip_region_ss,df_plot,display) => {
+define({id: "22c3ad4e", inputs: ["dfzip_region_ss","df_plot"], outputs: ["joinData","dfLeaflet"], body: (dfzip_region_ss,df_plot) => {
 // Function to join data
 function joinData(geoJSONData, dataArray, idKey) {
   // Create a map for faster lookups
@@ -231,7 +235,7 @@ function joinData(geoJSONData, dataArray, idKey) {
 
 // Join data
 const dfLeaflet = joinData(dfzip_region_ss, df_plot, "aluekoodi");
-display(df_plot);
+//display(df_plot);
 return {joinData,dfLeaflet};
 }});
 
@@ -704,8 +708,8 @@ define({id: "c3f9f40a", body: () => {
 </div>
   
 <div id="cell-273f4501" class="observablehq observablehq--block"></div>
-<div id="cell-60a8301d" class="observablehq observablehq--block"></div>
-<div id="cell-caa1077d" class="observablehq observablehq--block"></div>
+<div id="cell-8163d4dd" class="observablehq observablehq--block"></div>
+<div id="cell-22c3ad4e" class="observablehq observablehq--block"></div>
 <div class="grid grid-cols-2">
   <div class="card">
 <div id="cell-146e02a7" class="observablehq observablehq--block"></div>
