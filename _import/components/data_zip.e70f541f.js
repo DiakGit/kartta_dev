@@ -2,7 +2,7 @@ import { FileAttachment } from "../../_observablehq/stdlib.js";
 import { resize } from "../../_observablehq/stdlib.js";
 import { DuckDBClient } from "../../_observablehq/stdlib/duckdb.js";
 import { html } from "../../_npm/htl@0.3.1/_esm.js";
-import * as Plot from "../../_npm/@observablehq/plot@0.6.14/_esm.js";
+import * as Plot from "../../_npm/@observablehq/plot@0.6.15/_esm.js";
 import * as d3 from "../../_npm/d3@7.9.0/_esm.js";
 import * as _ from "../../_npm/underscore@1.13.6/_esm.js";
 import * as Inputs from "../../_observablehq/stdlib/inputs.js";

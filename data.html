@@ -15,7 +15,7 @@
 <link rel="modulepreload" href="./_import/components/alueprofiilit.197586ee.js">
 <link rel="modulepreload" href="./_observablehq/stdlib/duckdb.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/_esm.js">
-<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.14/_esm.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.15/_esm.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/_esm.js">
 <link rel="modulepreload" href="./_npm/underscore@1.13.6/_esm.js">
 <link rel="modulepreload" href="./_observablehq/stdlib/inputs.js">
@@ -58,7 +58,7 @@
 <link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/_esm.js">
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/_esm.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/_esm.js">
-<link rel="modulepreload" href="./_npm/tslib@2.6.2/_esm.js">
+<link rel="modulepreload" href="./_npm/tslib@2.6.3/_esm.js">
 <link rel="modulepreload" href="./_npm/flatbuffers@24.3.25/_esm.js">
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/_esm.js">
 <meta property="og:title" content="Huono-osaisuus Suomessa -karttasovellus"><meta property="og:url" content="https://karttasovellus.diak.fi"><meta property="og:image" content="https://markuskainu.fi/posts/2024-05-30-diak-karttasovellus/karttasovellus2024.png"><meta property="og:description" content="Sovelluksessa voit tarkastella erilaisia huono-osaisuuden osoittimia, osoittimien välisiä yhteyksiä sekä luoda profiileja alueista. Postinumeroaluetietoihin on lisäksi oma näkymänsä."><meta name="twitter:title" content="Huono-osaisuus Suomessa -karttasovellus"><meta name="twitter:description" content="Sovelluksessa voit tarkastella erilaisia huono-osaisuuden osoittimia, osoittimien välisiä yhteyksiä sekä luoda profiileja alueista. Postinumeroaluetietoihin on lisäksi oma näkymänsä."><meta name="twitter:image" content="https://markuskainu.fi/posts/2024-05-30-diak-karttasovellus/karttasovellus2024.png"><meta name="twitter:card" content="summary_large_image">
@@ -67,10 +67,10 @@
 import {define} from "./_observablehq/client.js";
 import {registerFile} from "./_observablehq/stdlib.js";
 
-registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1717251849860});
-registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.7697f8c3.json","lastModified":1717251849192});
-registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.0934d6f6.json","lastModified":1717251848340});
-registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1717251852352});
+registerFile("./data/df_alueprofiilit.json", {"name":"./data/df_alueprofiilit.json","mimeType":"application/json","path":"./_file/data/df_alueprofiilit.4b415339.json","lastModified":1718182129038});
+registerFile("./data/df_indicator_list.json", {"name":"./data/df_indicator_list.json","mimeType":"application/json","path":"./_file/data/df_indicator_list.7697f8c3.json","lastModified":1718182562195});
+registerFile("./data/df_muuttujakuvaukset.json", {"name":"./data/df_muuttujakuvaukset.json","mimeType":"application/json","path":"./_file/data/df_muuttujakuvaukset.0934d6f6.json","lastModified":1718182127322});
+registerFile("./data/df_region.json", {"name":"./data/df_region.json","mimeType":"application/json","path":"./_file/data/df_region.ae39e874.json","lastModified":1718182131683});
 
 define({id: "6fc88545", outputs: ["unsafe_html"], body: async () => {
 const {unsafe_html} = await import("./_import/components/alueprofiilit.197586ee.js");
@@ -366,13 +366,13 @@ Inputs.table(df_muuttujakuvaukset.filter(d => d.var_class == all_varclass[7]), {
 <td><code>.json</code></td>
 </tr>
 <tr>
-<td><a class="diaklink" href="./_file/data/dfzip.e52ca1d2.csv" download="">dfzip.csv</a></td>
+<td><a class="diaklink" href="./_file/data/dfzip.494264a4.csv" download="">dfzip.csv</a></td>
 <td>uusin poikkileikkausaineisto</td>
 <td>postinumeroalue</td>
 <td><code>.csv</code></td>
 </tr>
 <tr>
-<td><a class="diaklink" href="./_file/data/dfzip_aikasarja.bdb7c252.csv" download="">dfzip_aikasarja.csv</a></td>
+<td><a class="diaklink" href="./_file/data/dfzip_aikasarja.5ed2e2cf.csv" download="">dfzip_aikasarja.csv</a></td>
 <td>aikasarjadata</td>
 <td>postinumeroalue</td>
 <td><code>.csv</code></td>
