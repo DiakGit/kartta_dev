@@ -1,0 +1,23 @@
+regio_level,aluekoodi,aluenimi,variable,value,var_class,all_upper,region_id,rank
+Hyvinvointialueet,4,Vantaan ja Keravan HVA,Huono-osaisuus yhteensä (med.),119.7840830136198,HOS Summamuuttujat,TRUE,hva4,1
+Hyvinvointialueet,9,Päijät-Hämeen HVA,Huono-osaisuus yhteensä (med.),118.32495946508466,HOS Summamuuttujat,TRUE,hva9,2
+Hyvinvointialueet,10,Kymenlaakson HVA,Huono-osaisuus yhteensä (med.),116.49860118245836,HOS Summamuuttujat,TRUE,hva10,3
+Hyvinvointialueet,90,Helsingin kaupunki,Huono-osaisuus yhteensä (med.),114.10621655300099,HOS Summamuuttujat,TRUE,hva90,4
+Hyvinvointialueet,13,Pohjois-Savon HVA,Huono-osaisuus yhteensä (med.),112.14746291354255,HOS Summamuuttujat,TRUE,hva13,5
+Hyvinvointialueet,12,Etelä-Savon HVA,Huono-osaisuus yhteensä (med.),109.01451879224483,HOS Summamuuttujat,TRUE,hva12,6
+Hyvinvointialueet,15,Keski-Suomen HVA,Huono-osaisuus yhteensä (med.),106.94212053776532,HOS Summamuuttujat,TRUE,hva15,7
+Hyvinvointialueet,14,Pohjois-Karjalan HVA,Huono-osaisuus yhteensä (med.),106.71259893851311,HOS Summamuuttujat,TRUE,hva14,8
+Hyvinvointialueet,21,Lapin HVA,Huono-osaisuus yhteensä (med.),104.06033937015384,HOS Summamuuttujat,TRUE,hva21,9
+Hyvinvointialueet,20,Kainuun HVA,Huono-osaisuus yhteensä (med.),102.28144054183441,HOS Summamuuttujat,TRUE,hva20,10
+Hyvinvointialueet,6,Satakunnan HVA,Huono-osaisuus yhteensä (med.),102.00108465505924,HOS Summamuuttujat,TRUE,hva6,11
+Hyvinvointialueet,7,Kanta-Hämeen HVA,Huono-osaisuus yhteensä (med.),99.91462734281822,HOS Summamuuttujat,TRUE,hva7,12
+Hyvinvointialueet,19,Pohjois-Pohjanmaan HVA,Huono-osaisuus yhteensä (med.),97.69190830371883,HOS Summamuuttujat,TRUE,hva19,13
+Hyvinvointialueet,8,Pirkanmaan HVA,Huono-osaisuus yhteensä (med.),96.43803355475764,HOS Summamuuttujat,TRUE,hva8,14
+Hyvinvointialueet,11,Etelä-Karjalan HVA,Huono-osaisuus yhteensä (med.),93.52697239637807,HOS Summamuuttujat,TRUE,hva11,15
+Hyvinvointialueet,3,Länsi-Uudenmaan HVA,Huono-osaisuus yhteensä (med.),91.2328109214673,HOS Summamuuttujat,TRUE,hva3,16
+Hyvinvointialueet,5,Varsinais-Suomen HVA,Huono-osaisuus yhteensä (med.),90.96494985502783,HOS Summamuuttujat,TRUE,hva5,17
+Hyvinvointialueet,18,Keski-Pohjanmaan HVA,Huono-osaisuus yhteensä (med.),89.41918427617047,HOS Summamuuttujat,TRUE,hva18,18
+Hyvinvointialueet,2,Keski-Uudenmaan HVA,Huono-osaisuus yhteensä (med.),89.20336293156986,HOS Summamuuttujat,TRUE,hva2,19
+Hyvinvointialueet,1,Itä-Uudenmaan HVA,Huono-osaisuus yhteensä (med.),88.41334532009608,HOS Summamuuttujat,TRUE,hva1,20
+Hyvinvointialueet,16,Etelä-Pohjanmaan HVA,Huono-osaisuus yhteensä (med.),88.00478774133069,HOS Summamuuttujat,TRUE,hva16,21
+Hyvinvointialueet,17,Pohjanmaan HVA,Huono-osaisuus yhteensä (med.),71.79224770102434,HOS Summamuuttujat,TRUE,hva17,22
